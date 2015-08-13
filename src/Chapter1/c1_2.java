@@ -1,7 +1,7 @@
 package Chapter1;
-/**
- *Write code to reverse a C-Style String. (C-String means that “abcd” is represented 
- *as five characters, including the null character.)
+/*
+ Write code to reverse a C-Style String. (C-String means that “abcd” is represented 
+ as five characters, including the null character.)
 */
 
 public class c1_2 {
@@ -17,7 +17,7 @@ public class c1_2 {
 	}
 	
 	public static void main(String[] args){
-		char[] s="alireza salehi golsefidy".toCharArray();
+		char[] s="today is a great day".toCharArray();
 		reverse(s);
 		System.out.println(s);
 		
