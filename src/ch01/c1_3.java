@@ -1,4 +1,4 @@
-package Chapter1;
+package ch01;
 /*
  Design an algorithm and write code to remove the duplicate characters in a string
  without using any additional buffer. NOTE: One or two additional variables are fine.
