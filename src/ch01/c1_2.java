@@ -5,22 +5,22 @@ package ch01;
 */
 
 public class c1_2 {
-	private static void reverse(char[] s){
-		int l=s.length;
-		for (int i=0;i<Math.floor(l/2);i++){
-		
-			char tmp=s[i];
-			s[i]=s[l-i-1];
-			s[l-i-1]=tmp;
+	private static void reverse(char[] s) {
+		int l = s.length;
+		for (int i = 0; i < Math.floor(l / 2); i++) {
+
+			char tmp = s[i];
+			s[i] = s[l - i - 1];
+			s[l - i - 1] = tmp;
 		}
-		
+
 	}
-	
-	public static void main(String[] args){
-		char[] s="today is a great day".toCharArray();
+
+	public static void main(String[] args) {
+		char[] s = "today is a great day".toCharArray();
 		reverse(s);
 		System.out.println(s);
-		
+
 	}
 
 }

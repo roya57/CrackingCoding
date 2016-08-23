@@ -8,27 +8,29 @@ package ch01;
  */
 
 public class c1_3 {
-	private static void removeDuplicates(char[] s){
-		int t=1;
-		for (int i=1;i<s.length;i++){
-			int j=0;
-			for (j=0;j<t;j++){
-				if (s[i]==s[j]) break;
+	private static void removeDuplicates(char[] s) {
+		int t = 1;
+		for (int i = 1; i < s.length; i++) {
+			int j = 0;
+			for (j = 0; j < t; j++) {
+				if (s[i] == s[j])
+					break;
 			}
-			if (j==t){
-				s[t]=s[i];
+			if (j == t) {
+				s[t] = s[i];
 				t++;
 			}
 		}
-		for (int i=t;i<s.length;i++){
-			s[i]='\0';
+		for (int i = t; i < s.length; i++) {
+			s[i] = '\0';
 		}
 	}
-	public static void main(String[] args){
-		char[] s="ababcededca".toCharArray();
+
+	public static void main(String[] args) {
+		char[] s = "ababcededca".toCharArray();
 		removeDuplicates(s);
 		System.out.println(s);
-		
+
 	}
 
 }
